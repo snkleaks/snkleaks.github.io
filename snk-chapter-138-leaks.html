@@ -45,6 +45,7 @@
 			    <img id="zook_back" src="https://snkleaks.github.io/zooked.png"/>
 			</div>
 		</div>
+	    <div id="brought">Brought to you by /u/Ampaselite</div>
 	</div>
 
 	<script>
@@ -71,6 +72,7 @@
 		  document.getElementById("prev").innerHTML = "You can't escape from ZOOK!";
 		  document.body.style.animation = "backgr 1s infinite alternate";
 		  document.getElementById("previous_container").innerHTML = "<p style='font-size: 500%;padding:20px;word-break: break-all;'>Mmmmmmmmmmmmmmmgggggggggghhhhh</p>";
+		document.getElementById("brought").style.display = "block";
 		}
 	</script>
 
@@ -173,6 +175,12 @@
     		position: relative;
     		z-index:999;
     		color: #0645AD!important;
+    	}
+	    #brought {
+    		position: absolute;
+    		bottom: 0;
+    		display: none;
+    		right: 0;
     	}
     	#zooker {
     		/*display: none;*/
