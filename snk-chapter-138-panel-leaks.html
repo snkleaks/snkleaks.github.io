@@ -20,7 +20,13 @@
 				<br><br> -->
 				<h3>Leaked panels:</h3>
 				*will update if there are more
-				<img id="read2" src="https://snkleaks.github.io/spoilerchapter.png">
+				<br>
+				<div id="read2">
+					<img class="read" src="https://snkleaks.github.io/eretitan.png">
+					<img class="read" src="https://snkleaks.github.io/erehisu.png">
+					<img class="read" src="https://snkleaks.github.io/mikahisuu.png">
+					<img class="read" src="https://snkleaks.github.io/spoilerchapter.png">
+				</div>
 			</div>
 		</div>
 		<div class='post previous'>
@@ -55,8 +61,8 @@
 	</div>
 
 	<script>
-		var read = document.getElementById('read');
-		read.addEventListener("click", show);
+		// var read = document.getElementById('read');
+		// read.addEventListener("click", show);
 		var read2 = document.getElementById('read2');
 		read2.addEventListener("click", show);
 
@@ -72,7 +78,7 @@
 		  head.style.animation = "scale-up-center 0.2s ease-in infinite alternate both"
 		  // zooker.style.display = "block";
 		  zook_container.style.bottom = 0;
-		  read.style.zIndex = 0;
+		  read2.style.zIndex = 0;
 		  header.style.background = "transparent";
 		  // header.style.borderBottom = "1px solid #ddd";
 		  document.getElementById("chapter_title").innerHTML = "Ayy lmao";
@@ -197,10 +203,20 @@
     	#read2 {
     		position: relative;
     		z-index:999;
-    		color: #0645AD!important;
+    		/*color: #0645AD!important;*/
     		cursor: pointer;
     		display: block;
+    		text-align: center;
+    		/*max-width: 100%;*/
+    	}
+    	.read {
+    		/*position: relative;*/
+    		/*z-index:999;*/
+    		/*color: #0645AD!important;*/
+    		/*cursor: pointer;*/
+    		display: inline-block;
     		max-width: 100%;
+    		/*width: 50%;*/
     	}
 	    #brought {
     		position: absolute;
