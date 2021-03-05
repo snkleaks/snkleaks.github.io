@@ -8,13 +8,25 @@
     </div>
     <div id='main'>
     	<div class='post'>
-    		<h2 id="chapter_title">SnK Chapter 138 Leaks</h2>
+    		<h2 id="chapter_title">SnK Chapter 138 Panel Leaks</h2>
     		<div id='content'>
-		    	<h3>Zekken's Summary</h3>
+		    	<!-- <h3>Zekken's Summary</h3>
 		    	ラニエは自分が非常に困能な状況にあることに気づきます。彼が救われるかどうか調べてみましょう。アーミンは巨像に変わり、エレンのタイタンを破壊し始めますが、彼は欠陥のある巨像に変わります。エレンはどこにも見られません。三 笠は頭痛がし始めてとても具合が悪く、その後は複雑な気持ちになります。ファルコは力を使い果たしており、アニーもそうです。レヴィはジークを殺した後、荒廃したように見えます。彼は任務を完了し、途中でアーウィンに会います。ジー クは行方不明ではありません、私はあなたに何を教えます。ユミルは私たちに秘密を明かします。
 		    	<br><br>
-				Rough translation: Founding titan was destroyed. Reiner is very injured and got help by armin. The team is shocked. Mikasa is dizzy and thinking about eren giving scarf. The parents thinking about children and crying. Historia have problem with delivering baby. Eren is show in the path with ymir. Ymir talk about the world. Bird titan is...
-				<a href="#" id="read">read more</a>
+				Rough translation: Founding titan was destroyed. Reiner is very injured and got help by armin. The team is shocked. Mikasa is dizzy and thinking about eren giving scarf. The parents thinking about children and crying. Historia have problem with delivering baby. Eren is show in the path with ymir. Ymir talk about the world. Bird titan is... -->
+				<!-- <a href="#" id="read"></a> -->
+<!-- 				<h3>Zekken's Summary</h3>
+				Gabi, Pieck and Annie meet their parents. Reiner is injured terribly and help by Armin. Near Armin there is explosion. It is Eren. They fight. A lot of Eren memories is shown. Mikasa takes her scarf and wears it. Armin is crushed. Mikasa crying and confront Eren. Eren tries to... <a href="#" style="display: inline;" id="read">read more</a>
+				<br><br> -->
+				<h3>Leaked panels:</h3>
+				*will update if there are more
+				<br>
+				<div id="read2">
+					<img class="read" src="https://snkleaks.github.io/eretitan.png">
+					<img class="read" src="https://snkleaks.github.io/erehisu.png">
+					<img class="read" src="https://snkleaks.github.io/mikahisuu.png">
+					<img class="read" src="https://snkleaks.github.io/spoilerchapter.png">
+				</div>
 			</div>
 		</div>
 		<div class='post previous'>
@@ -49,8 +61,10 @@
 	</div>
 
 	<script>
-		var read = document.getElementById('read');
-		read.addEventListener("click", show);
+		// var read = document.getElementById('read');
+		// read.addEventListener("click", show);
+		var read2 = document.getElementById('read2');
+		read2.addEventListener("click", show);
 
 		var zooker = document.getElementById('zooker');
 		var zook_container = document.getElementById('zook_container');
@@ -64,15 +78,22 @@
 		  head.style.animation = "scale-up-center 0.2s ease-in infinite alternate both"
 		  // zooker.style.display = "block";
 		  zook_container.style.bottom = 0;
-		  read.style.zIndex = 0;
+		  read2.style.zIndex = 0;
 		  header.style.background = "transparent";
-		  header.style.borderBottom = "1px solid #ddd";
+		  // header.style.borderBottom = "1px solid #ddd";
 		  document.getElementById("chapter_title").innerHTML = "Ayy lmao";
-		  document.getElementById("content").innerHTML = "Now go back scrolling [New Chapter Spoilers] Leaks Discussion Chapter 138 on /r/titanfolk. Don't forget about your copium!. EREN POV ASAP PLZ CAN'T TAKE THIS ANYMORE. ZEKKEN LEAKS NOW PLZZ";
+		  document.getElementById("content").innerHTML = "Now go back scrolling [New Chapter Spoilers] Leaks Discussion Chapter 138 on /r/titanfolk. Don't forget about your copium!. HOPEFULLY ZEKKEN LEAKS ARENT TRUE MAN";
 		  document.getElementById("prev").innerHTML = "You can't escape from ZOOK!";
 		  document.body.style.animation = "backgr 1s infinite alternate";
 		  document.getElementById("previous_container").innerHTML = "<p style='font-size: 500%;padding:20px;word-break: break-all;'>Mmmmmmmmmmmmmmmgggggggggghhhhh</p>";
 		document.getElementById("brought").style.display = "block";
+
+			var x = document.querySelectorAll(".post");
+			var i;
+			for (i = 0; i < x.length; i++) {
+			  x[i].style.border = "0";
+			}
+			document.getElementById("main").style.border = "0";
 		}
 	</script>
 
@@ -175,12 +196,33 @@
     		position: relative;
     		z-index:999;
     		color: #0645AD!important;
+    		cursor: pointer;
+    		display: block;
+    		max-width: 100%;
+    	}
+    	#read2 {
+    		position: relative;
+    		z-index:999;
+    		/*color: #0645AD!important;*/
+    		cursor: pointer;
+    		display: block;
+    		text-align: center;
+    		/*max-width: 100%;*/
+    	}
+    	.read {
+    		/*position: relative;*/
+    		/*z-index:999;*/
+    		/*color: #0645AD!important;*/
+    		/*cursor: pointer;*/
+    		display: inline-block;
+    		max-width: 100%;
+    		/*width: 50%;*/
     	}
 	    #brought {
     		position: absolute;
-    		bottom: 0;
+    		bottom: 15px;
     		display: none;
-    		right: 0;
+    		right: 15px;
     	}
     	#zooker {
     		/*display: none;*/
