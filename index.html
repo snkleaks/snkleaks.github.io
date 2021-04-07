@@ -1,7 +1,7 @@
 <html><head>
-    <title>SnK Chapter 138 Leaks</title>
+    <title>SnK Chapter 139 Leaks</title>
   </head>
-  <body style="font-family: &quot;Comic Sans MS&quot;, &quot;Comic Sans&quot;, cursive; animation: 0.3s ease 0s infinite alternate none running backgr;">
+  <body style="font-family: &quot;Comic Sans MS&quot;, &quot;Comic Sans&quot;, sans-serif; animation: 4s ease 0s infinite alternate none running backgr;">
     <div id="header" style="background: transparent;">
  	<div id="headtext" style="animation: 0.2s ease-in 0s infinite alternate both running scale-up-center;">Uh oh! you just got ZOOK'D!!!</div>
     </div>
@@ -12,10 +12,14 @@
 		</div>
 		<div class="post previous" style="border: 0px;">
 			<h1 id="prev">You can't escape from ZOOK!</h1>
+			<h1 id="prev">YOU HAVE BEEN ZOOKED HERE <span id="zookcount"></span> TIMES BY THE WAY</h1>
 
 		</div>
 		<div id="previous_container"><p style="font-size: 500%;padding:20px;word-break: break-all;">Mmmmmmmmmmmmmmmgggggggggghhhhh</p></div>
 		<h1 id="prev">On a sad side, this time is probably the last time this page is seen cuz the manga will end :(</h1>
+	    <br>
+	    <br>
+	    <p>How is this still popular when i'm actually banned on titanfolk lmao, unban me plz modsss</p>
     </div>
     <div id="zooker">
     	<div id="zook_container" style="">
@@ -24,10 +28,22 @@
 			    <img id="zook_back" src="https://snkleaks.github.io/zooked.png">
 			</div>
 		</div>
-	    <div id="brought" style="display: block;">Brought to you by /u/Ampaselite</div>
+	    <div id="brought" style="display: block;">Brought to you by /u/Ampaselite (banned and crying)</div>
 	</div>
 
 	<script>
+		var zookcount = document.getElementById('zookcount');
+		
+		var n = localStorage.getItem('counter');
+		if (n === null) {
+		    n = 1;
+		} else {
+		    n++;
+		}
+		
+		localStorage.setItem("counter", n);
+		
+		zookcount.innerHTML = n;
 		var read = document.getElementById('read');
 		read.addEventListener("click", show);
 		var read2 = document.getElementById('read2');
